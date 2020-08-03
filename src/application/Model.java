@@ -19,7 +19,7 @@ public class Model {
 		}
 	}
 	
-	public float calc_log(long number1) {
+	public float calc(long number1) {
 		return (float) Math.log(number1);
 	}
 }

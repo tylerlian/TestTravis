@@ -39,7 +39,7 @@ public class MainController {
 			if(operator.isEmpty())
 				return;
 			if(operator.equals("log")) {
-				float output = model.calc_log(number1);
+				float output = model.calc(number1);
 				result.setText(String.valueOf(output));
 				operator = "";
 			} else {
