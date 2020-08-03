@@ -100,7 +100,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
          <children>
-         	<Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="log">
+         	<Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="log">
                <font>
                   <Font size="18.0" />
                </font>
