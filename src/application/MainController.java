@@ -38,10 +38,16 @@ public class MainController {
 		} else {
 			if(operator.isEmpty())
 				return;
-			long number2 = Long.parseLong(result.getText());
-			float output = model.calculate(number1, number2, operator);
-			result.setText(String.valueOf(output));
-			operator = "";
+			if(operator.equals("log")) {
+				float output = model.calc_log(number1);
+				result.setText(String.valueOf(output));
+				operator = "";
+			} else {
+				long number2 = Long.parseLong(result.getText());
+				float output = model.calculate(number1, number2, operator);
+				result.setText(String.valueOf(output));
+				operator = "";
+			}
 			start = true;
 		}
 	}
